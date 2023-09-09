@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    background-image: linear-gradient(to bottom right, #803068, #333);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 22px black;
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.banner-login{
+    width: 100%;
+    height: 130px;
+    background: url('../img/bg3.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 0 100% 100%;
+    margin: 0 0 10px;
+}
+
+.form-login{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login form{
+    position: relative;
+    width: 300px;
+}
+
+.form-item{
+    margin: 15px 0;
+}
+.form-item label{
+    display: block;
+    font-weight: 600;
+}
+.form-item input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 0 10px 0 10px;
+    outline: none;
+    font-size: .9em;
+    color: black;
+    font-weight: 600;
+    border-radius: 2px;
+    background-color: #cfc8c8;
+}
+input:focus{
+    -webkit-border-before: none;
+}
+.form-forget{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: .8em;
+    margin: 10px 0;
+}
+.form-forget span a,
+.form-create a{
+    color: #803068;
+    text-decoration: none;
+    font-weight: 600;
+}
+.form-forget span a:hover,
+.form-create a:hover{
+    text-decoration: underline;
+}
+.btn-form{
+    border: none;
+    background-color: #803068;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form-create{
+    font-size: .8em;
+    margin: 10px 0;
+    text-align: center;
+}
+.log-with{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.log-with span{
+    font-size: .9em;
+}
+.login-icons{
+    width: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.login-icons ion-icon{
+    font-size: 1.7em;
+    color: black;
+}
+
+@media screen and (min-width: 800px) {
+    body{
+        height: 100vh;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        margin: 0;
+    }
+
+    .banner-login{
+        width: 50%;
+        height: 100%;
+        border-radius: 0 0 40% 0;
+        margin: 0;
+    }
+}
+
